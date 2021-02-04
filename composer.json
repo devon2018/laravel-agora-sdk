@@ -1,0 +1,37 @@
+{
+  "name": "djinn/laravel-agora-sdk",
+  "description": "Agora PHP implementation for laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Devon Ray",
+      "email": "devon@devonray.net"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Djinn\\Agora\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Djinn\\Agora\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Djinn\\Agora\\AgoraServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true
+}
